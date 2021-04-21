@@ -1,0 +1,77 @@
+body {
+  font-size: 25px;
+font-family: 'Varela Round', sans-serif;
+  color: black;
+
+}
+
+button {
+font-size: 20px;
+color: white;
+background: #508abc;
+border: solid 1px;
+cursor: pointer;
+border-color: rgba(0, 0, 0, .1);
+border-radius: 5px;
+box-shadow: 3px 5px 5px grey;
+
+}
+
+button:hover {
+background-color: #CD5C5C;
+transform: scale(1.1); 
+}
+
+.button:active {
+transform: translateY(2px);
+}
+
+h1 {
+padding: 15px;
+margin: 0px;
+background: #508abc;
+color: white; 
+border-radius: 10px;box-shadow: 3px 5px 3px grey;
+}
+
+.Manhattan { 
+grid-area: Manhattan; 
+
+}
+.Bronx { 
+grid-area: Bronx; 
+
+}
+.Brooklyn { 
+grid-area: Brooklyn; 
+
+}
+.Queens { 
+grid-area: Queens; 
+}
+.StatenIsland { 
+grid-area: Staten Island; 
+}
+
+.grid-container {
+display: grid;
+grid-template-areas:
+  'Search Manhattan Bronx Brooklyn Queens Staten Island';
+grid-gap: 20px;
+background-color: #white;
+padding: 30px;
+}
+
+#police-action{
+  font-size: 30px;
+  font-weight: bold;
+  color: #508abc;
+
+}
+
+#complaintTable{
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 6;
+}
+
